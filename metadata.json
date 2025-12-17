@@ -1,0 +1,5 @@
+{
+  "name": "LogoCraft AI",
+  "description": "Generate professional, vector-style logos instantly using Gemini 2.5 Flash Image model. Customize styles, colors, and concepts with ease.",
+  "requestFramePermissions": []
+}
