@@ -1,12 +1,14 @@
 import { GoogleGenAI } from "@google/genai";
 import { LogoConfig } from "../types.ts";
 
+// Ensure we read from the window.process shim we created in index.html
 const apiKey = process.env.API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
 export const generateLogoImage = async (config: LogoConfig): Promise<string> => {
   if (!apiKey) {
-    throw new Error("API Key is missing.");
+    console.error("API Key is missing. If you are on Netlify, ensure 'API_KEY' is set in Site Settings > Environment Variables. If local, ensure env-config.js exists or manually set it.");
+    throw new Error("API Key is missing. Check console for details.");
   }
 
   // Construct a detailed prompt for the image model
