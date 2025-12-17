@@ -1,5 +1,5 @@
 import React from 'react';
-import { GeneratedLogo } from '../types';
+import { GeneratedLogo } from '../types.ts';
 import { Clock } from 'lucide-react';
 
 interface HistoryGridProps {

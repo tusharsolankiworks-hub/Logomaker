@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoConfig, LOGO_STYLES, COLOR_PALETTES } from '../types';
+import { LogoConfig, LOGO_STYLES, COLOR_PALETTES } from '../types.ts';
 import { Wand2, Type, Palette, LayoutTemplate } from 'lucide-react';
 
 interface ControlPanelProps {

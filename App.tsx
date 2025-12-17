@@ -1,10 +1,10 @@
 import React, { useState, useCallback } from 'react';
-import { Header } from './components/Header';
-import { ControlPanel } from './components/ControlPanel';
-import { PreviewArea } from './components/PreviewArea';
-import { HistoryGrid } from './components/HistoryGrid';
-import { LogoConfig, GeneratedLogo, GenerationStatus, LOGO_STYLES, COLOR_PALETTES } from './types';
-import { generateLogoImage } from './services/geminiService';
+import { Header } from './components/Header.tsx';
+import { ControlPanel } from './components/ControlPanel.tsx';
+import { PreviewArea } from './components/PreviewArea.tsx';
+import { HistoryGrid } from './components/HistoryGrid.tsx';
+import { LogoConfig, GeneratedLogo, GenerationStatus, LOGO_STYLES, COLOR_PALETTES } from './types.ts';
+import { generateLogoImage } from './services/geminiService.ts';
 
 const DEFAULT_CONFIG: LogoConfig = {
   brandName: '',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { GeneratedLogo, GenerationStatus } from '../types';
+import { GeneratedLogo, GenerationStatus } from '../types.ts';
 import { Download, Share2, Sparkles, Image as ImageIcon } from 'lucide-react';
 
 interface PreviewAreaProps {
