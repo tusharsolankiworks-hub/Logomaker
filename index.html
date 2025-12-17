@@ -39,8 +39,22 @@
   }
 }
 </script>
+<!-- Babel for in-browser JSX/TS transformation -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<!-- Polyfill for process.env to support Netlify Environment Variables logic -->
+<script>
+  window.process = {
+    env: {
+      API_KEY: '' 
+      // Note: In a production build, this is replaced by the bundler.
+      // For runtime use, this object ensures the app can reference process.env without crashing.
+    }
+  };
+</script>
 </head>
   <body>
     <div id="root"></div>
+    <!-- Load the main application file with Babel -->
+    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>
